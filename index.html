@@ -14,9 +14,11 @@
     <title>Batman</title>
   </head>
   <body>
-    <div class="container">
+   
       <div class="header">
-        <div class="logo">КиноПульс</div>
+        <div class="container">
+        <div class="container-header">
+          <div class="logo">КиноПульс</div>
         <form action="" class="search">
           <input type="search" class="search-input" placeholder="фильмы" />
           <button type="submit" class="search-button">
@@ -27,16 +29,25 @@
           <img src="images/bookmark.svg" alt="bookmark" class="bookmark" />
           <img src="images/avatar.jpg" alt="" class="avatar" />
         </div>
+        </div>
+        </div>
+        
       </div>
 
       <main class="main">
-        <h1 class="title animated fadeInDownBig">Бэтмен</h1>
+        <div class="container">
+        <h1 class="title animated">Бэтмен</h1>
         <small class="title-en ">The batman</small>
         <div class="info animated fadeInRightBig delay-1s ">
           <div class="move-info">
             <span class="tag ">Фильм</span>
             <span class="country">сша,2021 год</span>
-            <a data-fancybox  href="https://www.youtube.com/watch?v=8SOyHktrjGE" class="play ">Смотреть трейлер</a>
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=8SOyHktrjGE"
+              class="play "
+              >Смотреть трейлер</a
+            >
           </div>
           <a href="" class="more ">Подробнее</a>
         </div>
@@ -151,9 +162,10 @@
           <!-- full-info -->
         </div>
         <!-- content -->
+        </div>
       </main>
-    </div>
- <script src="js/jquery-3.4.1.min.js"></script>
+  
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
