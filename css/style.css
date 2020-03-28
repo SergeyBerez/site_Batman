@@ -34,8 +34,7 @@ body {
 
 .header {
   padding: 30px 0px;
- 
-  transition: 0.5s;
+ transition: 0.5s;
  
   /* margin-bottom: 30%; */
 }
@@ -332,6 +331,14 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+  .container-header {
+    flex-wrap: wrap;
+  }
+  .search {
+    order: 3;
+    flex-basis: 100%;
+    margin-top: 5%;
   }
   .more {
     display: none;
