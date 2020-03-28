@@ -1,4 +1,5 @@
-@import 'animate';
+@import "animate";
+
 @font-face {
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-Regular.ttf"),
@@ -22,6 +23,7 @@ body {
 ::after {
   box-sizing: border-box;
 }
+
 a:visited {
   border: none;
 }
@@ -45,6 +47,7 @@ a:visited {
 
   /* margin-bottom: 30%; */
 }
+
 .position-fixed {
   padding: 0;
   z-index: 9999;
@@ -55,6 +58,7 @@ a:visited {
   left: 0;
   background: rgba(20, 19, 19, 0.883);
 }
+
 .show {
   opacity: 1;
 }
@@ -178,6 +182,7 @@ a:visited {
   text-decoration: none;
   color: #ffffff;
 }
+
 .play::before {
   content: "";
   width: 30px;
@@ -187,6 +192,7 @@ a:visited {
   background-repeat: no-repeat;
   margin-right: 15px;
 }
+
 .more {
   display: flex;
   align-items: center;
@@ -195,6 +201,7 @@ a:visited {
   text-decoration: none;
   color: #ffffff;
 }
+
 .more::after {
   content: "";
   width: 30px;
@@ -204,6 +211,7 @@ a:visited {
   margin-left: 15px;
   transform: rotate(90deg);
 }
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -213,16 +221,19 @@ a:visited {
   color: black;
   padding: 3% 4%;
 }
+
 .short-info {
   opacity: 0;
 
   margin-right: 3%;
 }
+
 .poster {
   display: block;
   margin-top: -40%;
   margin-bottom: 19px;
 }
+
 .button {
   padding: 10px 44px;
   background: #ff8f27;
@@ -231,9 +242,11 @@ a:visited {
   color: #ffffff;
   border: none;
 }
+
 .bookmark-added {
   vertical-align: middle;
 }
+
 .actor-title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -248,27 +261,33 @@ a:visited {
   padding-left: 15px;
   text-decoration: underline;
 }
+
 .full-info {
   opacity: 0;
   flex: 0.95;
 }
+
 .full-content {
   display: flex;
   justify-content: space-between;
 }
+
 .tabs-content {
   margin-right: 70px;
   display: none;
 }
+
 .visible {
   display: block;
 }
+
 .tabs {
   display: flex;
   margin-bottom: 4%;
   align-items: center;
   /* flex-basis: 80%; */
 }
+
 .tabs-item {
   color: black;
   text-decoration: none;
@@ -276,6 +295,7 @@ a:visited {
   line-height: 21px;
   /* margin-right: 4%; */
 }
+
 .tabs-item:not(:last-child) {
   margin-right: 4%;
 }
@@ -283,11 +303,13 @@ a:visited {
 .tabs-item-active {
   color: #ff8f27;
 }
+
 .text {
   margin-top: 0;
   font-size: 16px;
   line-height: 140%;
 }
+
 .subscrube-title {
   margin-top: 0;
   margin-bottom: 14px;
@@ -295,10 +317,12 @@ a:visited {
   font-size: 16px;
   line-height: 150%;
 }
+
 .subscrube-form {
   display: flex;
   margin-bottom: 48px;
 }
+
 .subscribe-input {
   background: rgba(196, 196, 196, 0.5);
   color: #aeaeae;
@@ -318,25 +342,31 @@ a:visited {
   .container {
     max-width: 960px;
   }
+
   .tabs-item {
     font-size: 16px;
   }
 }
+
 @media (max-width: 992px) {
   .container {
     max-width: 740px;
   }
+
   .tabs {
     flex-wrap: wrap;
   }
+
   .tabs-item {
     flex-basis: 20%;
     line-height: 2;
     font-size: 16px;
   }
+
   .full-content {
     flex-wrap: wrap;
   }
+
   .tabs-content {
     margin-bottom: 3%;
   }
@@ -346,69 +376,87 @@ a:visited {
   .container {
     max-width: 540px;
   }
+
   .container-header {
     flex-wrap: wrap;
   }
+
   .search {
     order: 3;
     flex-basis: 100%;
     margin-top: 5%;
   }
+
   .more {
     display: none;
   }
+
   .tabs-item {
     flex-basis: 33%;
   }
+
   .tabs-content {
     margin-right: 0;
   }
 }
+
 @media (max-width: 578px) {
   body {
     background-size: auto;
   }
+
   .container {
     width: 90%;
   }
+
   .container-header {
     flex-wrap: wrap;
   }
+
   .full-content {
     justify-content: center;
   }
+
   .search {
     order: 3;
     flex-basis: 100%;
     margin-top: 5%;
   }
+
   .content {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .actor-title,
   .actors-list {
     display: none;
   }
+
   .move-info {
     flex-wrap: wrap;
   }
+
   .play {
     flex-basis: 100%;
     margin-top: 10%;
   }
+
   .short-info {
     margin-right: 0;
   }
+
   .button {
     width: 100%;
   }
+
   .poster {
     display: inline-block;
     margin-top: -20%;
     width: 50%;
   }
+
   .tabs-item {
     flex-basis: 100%;
   }
