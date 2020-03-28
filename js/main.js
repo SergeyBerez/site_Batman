@@ -38,9 +38,7 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 document.addEventListener("scroll", function(e) {
-  
   let top = Math.round(tag.getBoundingClientRect().top);
-  
 
   if (window.pageYOffset > 1) {
     title.classList.add("fadeInLeftBig");
@@ -53,9 +51,10 @@ document.addEventListener("scroll", function(e) {
       info.classList.remove("fadeOutRightBig");
     }
   } else if (
-    window.pageYOffset < 1 &&
+    window.pageYOffset < 10 &&
     title.classList.contains("fadeInLeftBig")
   ) {
+    head.classList.add("fadeInDownBig");
     title.classList.add("fadeOutLeftBig");
     titleEn.classList.add("fadeOutLeftBig");
     title.classList.remove("fadeInLeftBig");
@@ -66,7 +65,8 @@ document.addEventListener("scroll", function(e) {
   // -------------------
 
   if (window.pageYOffset > 150) {
-   console.log(1);
+    console.log(1);
+    head.classList.remove("fadeInDownBig");
     shortInfo.classList.add("fadeInLeftBig");
     fullInfo.classList.add("fadeInRightBig");
 
@@ -79,7 +79,7 @@ document.addEventListener("scroll", function(e) {
     shortInfo.classList.contains("fadeInLeftBig")
   ) {
     shortInfo.classList.add("fadeOutLeftBig");
-  fullInfo.classList.add("fadeOutRightBig");
+    fullInfo.classList.add("fadeOutRightBig");
     shortInfo.classList.remove("fadeInLeftBig");
     fullInfo.classList.remove("fadeInRightBig");
   }
