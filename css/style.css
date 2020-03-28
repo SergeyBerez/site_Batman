@@ -20,6 +20,9 @@ body {
 ::after {
   box-sizing: border-box;
 }
+a:visited {
+  border: none;
+}
 
 .first-letter::first-letter {
   text-transform: uppercase;
@@ -35,12 +38,12 @@ body {
 .header {
   /* height: 100px; */
   padding: 3% 0px;
- transition: 0.5s;
- 
+  transition: 0.5s;
+
   /* margin-bottom: 30%; */
 }
 .position-fixed {
- padding: 0;
+  padding: 0;
   z-index: 9999;
   position: fixed;
   width: 100%;
@@ -54,7 +57,7 @@ body {
 }
 
 .container-header {
- display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
