@@ -38,7 +38,7 @@ document.addEventListener("scroll", function(e) {
     title.classList.remove("fadeInLeftBig");
   }
 
-  if (window.pageYOffset > 50) {
+  if (window.pageYOffset > 70) {
     head.classList.add("position-fixed");
   } else {
     head.classList.remove("position-fixed");
