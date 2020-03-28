@@ -39,7 +39,7 @@ document.addEventListener("scroll", function(e) {
   let top = Math.round(tag.getBoundingClientRect().top);
   console.log(top);
 
-  if (window.pageYOffset > 5) {
+  if (window.pageYOffset > 1) {
     title.classList.add("fadeInLeftBig");
     info.classList.add("fadeInRightBig");
 
@@ -48,7 +48,7 @@ document.addEventListener("scroll", function(e) {
       info.classList.remove("fadeOutRightBig");
     }
   } else if (
-    window.pageYOffset < 5 &&
+    window.pageYOffset < 1 &&
     document.querySelector(".fadeInLeftBig")
   ) {
      title.classList.add("fadeOutLeftBig");
@@ -57,7 +57,7 @@ document.addEventListener("scroll", function(e) {
     info.classList.remove("fadeInRightBig");
   }
 
-  if (window.pageYOffset > 70) {
+  if (window.pageYOffset > 100) {
     head.classList.add("position-fixed");
   } else {
     head.classList.remove("position-fixed");
