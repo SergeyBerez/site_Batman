@@ -22,23 +22,25 @@ for (let i = 0; i < tabs.length; i++) {
     e.preventDefault();
     const id = this.getAttribute("href");
     const tabs = document.getElementById(id);
- tabsContent.forEach(element => {
+    tabsContent.forEach(element => {
       if (element.classList.contains("visible")) {
         element.classList.remove("visible");
       }
     });
     tabs.classList.add("visible");
-   
   });
-
 }
 
 document.addEventListener("scroll", function(e) {
-  if (window.pageYOffset > 50) {
-    head.classList.add("position-fixed");
+  if (window.pageYOffset > 20) {
     title.classList.add("fadeInLeftBig");
   } else {
+    title.classList.remove("fadeInLeftBig");
+  }
+
+  if (window.pageYOffset > 50) {
+    head.classList.add("position-fixed");
+  } else {
     head.classList.remove("position-fixed");
-     title.classList.remove("fadeInLeftBig");
   }
 });
