@@ -23,6 +23,7 @@ const tag = document.querySelector(".tag");
 const titleEn = document.querySelector(".title-en");
 const shortInfo = document.querySelector(".short-info");
 const fullInfo = document.querySelector(".full-info");
+const play = document.querySelector(".play");
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].addEventListener("click", function(e) {
     e.preventDefault();
@@ -42,6 +43,7 @@ document.addEventListener("scroll", function(e) {
 
   if (window.pageYOffset > 1) {
     title.classList.add("fadeInLeftBig");
+    play.classList.add("heartBeat");
     titleEn.classList.add("fadeInLeftBig");
     info.classList.add("fadeInRightBig");
 
@@ -61,6 +63,7 @@ document.addEventListener("scroll", function(e) {
     titleEn.classList.remove("fadeInLeftBig");
     info.classList.add("fadeOutRightBig");
     info.classList.remove("fadeInRightBig");
+    play.classList.remove("heartBeat");
   }
   // -------------------
 
