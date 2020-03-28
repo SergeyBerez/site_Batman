@@ -127,6 +127,7 @@ a:visited {
 }
 
 .title-en {
+  opacity: 0;
   display: inline-block;
   font-size: 20px;
   line-height: 23px;
@@ -210,6 +211,8 @@ a:visited {
   padding: 3% 4%;
 }
 .short-info {
+  opacity: 0;
+
   margin-right: 3%;
 }
 .poster {
@@ -243,6 +246,7 @@ a:visited {
   text-decoration: underline;
 }
 .full-info {
+  opacity: 0;
   flex: 0.95;
 }
 .full-content {
