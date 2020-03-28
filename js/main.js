@@ -30,6 +30,7 @@ for (let i = 0; i < tabs.length; i++) {
     tabs.classList.add("visible");
    
   });
+
 }
 
 document.addEventListener("scroll", function(e) {
@@ -38,5 +39,6 @@ document.addEventListener("scroll", function(e) {
     title.classList.add("fadeInLeftBig");
   } else {
     head.classList.remove("position-fixed");
+     title.classList.remove("fadeInLeftBig");
   }
 });

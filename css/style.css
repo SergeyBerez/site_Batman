@@ -100,7 +100,7 @@ body {
 }
 
 .avatar {
-  max-width: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
