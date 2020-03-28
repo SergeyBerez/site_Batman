@@ -32,7 +32,7 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 document.addEventListener("scroll", function(e) {
-  if (window.pageYOffset > 20) {
+  if (window.pageYOffset > 10) {
     title.classList.add("fadeInLeftBig");
   } else {
     title.classList.remove("fadeInLeftBig");
